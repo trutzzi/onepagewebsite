@@ -1,0 +1,758 @@
+/*=============================================
+=            Reseter            =
+=============================================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*=====  End of Reseter  ======*/
+
+/*=============================================
+=            GRID            =
+=============================================*/
+
+.grid {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.grid__col--2-of-2,
+.grid__col--3-of-3,
+.grid__col--4-of-4,
+.grid__col--5-of-5,
+.grid__col--6-of-6,
+.grid__col--8-of-8,
+.grid__col--12-of-12 {
+    width: 100%;
+}
+
+.grid__col--1-of-2,
+.grid__col--2-of-4,
+.grid__col--3-of-6,
+.grid__col--4-of-8,
+.grid__col--6-of-12 {
+    width: 50%;
+}
+
+.grid__col--1-of-3,
+.grid__col--2-of-6,
+.grid__col--4-of-12 {
+    width: 33.33333%;
+}
+
+.grid__col--2-of-3,
+.grid__col--4-of-6,
+.grid__col--8-of-12 {
+    width: 66.66667%;
+}
+
+.grid__col--1-of-4,
+.grid__col--2-of-8,
+.grid__col--3-of-12 {
+    width: 25%;
+}
+
+.grid__col--3-of-4,
+.grid__col--6-of-8,
+.grid__col--9-of-12 {
+    width: 75%;
+}
+
+.grid__col--push-2-of-2,
+.grid__col--push-3-of-3,
+.grid__col--push-4-of-4,
+.grid__col--push-5-of-5,
+.grid__col--push-6-of-6,
+.grid__col--push-8-of-8,
+.grid__col--push-12-of-12 {
+    margin-left: 100%;
+}
+
+.grid__col--push-1-of-2,
+.grid__col--push-2-of-4,
+.grid__col--push-3-of-6,
+.grid__col--push-4-of-8,
+.grid__col--push-6-of-12 {
+    margin-left: 50%;
+}
+
+.grid__col--push-1-of-3,
+.grid__col--push-2-of-6,
+.grid__col--push-4-of-12 {
+    margin-left: 33.33333%;
+}
+
+.grid__col--push-2-of-3,
+.grid__col--push-4-of-6,
+.grid__col--push-8-of-12 {
+    margin-left: 66.66667%;
+}
+
+.grid__col--push-1-of-4,
+.grid__col--push-2-of-8,
+.grid__col--push-3-of-12 {
+    margin-left: 25%;
+}
+
+.grid__col--push-3-of-4,
+.grid__col--push-6-of-8,
+.grid__col--push-9-of-12 {
+    margin-left: 75%;
+}
+
+.grid__col--pull-2-of-2,
+.grid__col--pull-3-of-3,
+.grid__col--pull-4-of-4,
+.grid__col--pull-5-of-5,
+.grid__col--pull-6-of-6,
+.grid__col--pull-8-of-8,
+.grid__col--pull-12-of-12 {
+    margin-left: -100%;
+}
+
+.grid__col--pull-1-of-2,
+.grid__col--pull-2-of-4,
+.grid__col--pull-3-of-6,
+.grid__col--pull-4-of-8,
+.grid__col--pull-6-of-12 {
+    margin-left: -50%;
+}
+
+.grid__col--pull-1-of-3,
+.grid__col--pull-2-of-6,
+.grid__col--pull-4-of-12 {
+    margin-left: -33.33333%;
+}
+
+.grid__col--pull-2-of-3,
+.grid__col--pull-4-of-6,
+.grid__col--pull-8-of-12 {
+    margin-left: -66.66667%;
+}
+
+.grid__col--pull-1-of-4,
+.grid__col--pull-2-of-8,
+.grid__col--pull-3-of-12 {
+    margin-left: -25%;
+}
+
+.grid__col--pull-3-of-4,
+.grid__col--pull-6-of-8,
+.grid__col--pull-9-of-12 {
+    margin-left: -75%;
+}
+
+.grid__col--1-of-5 {
+    width: 20%;
+}
+
+.grid__col--push-1-of-5 {
+    margin-left: 20%;
+}
+
+.grid__col--pull-1-of-5 {
+    margin-left: -20%;
+}
+
+.grid__col--2-of-5 {
+    width: 40%;
+}
+
+.grid__col--push-2-of-5 {
+    margin-left: 40%;
+}
+
+.grid__col--pull-2-of-5 {
+    margin-left: -40%;
+}
+
+.grid__col--3-of-5 {
+    width: 60%;
+}
+
+.grid__col--push-3-of-5 {
+    margin-left: 60%;
+}
+
+.grid__col--pull-3-of-5 {
+    margin-left: -60%;
+}
+
+.grid__col--4-of-5 {
+    width: 80%;
+}
+
+.grid__col--push-4-of-5 {
+    margin-left: 80%;
+}
+
+.grid__col--pull-4-of-5 {
+    margin-left: -80%;
+}
+
+.grid__col--1-of-6 {
+    width: 16.66667%;
+}
+
+.grid__col--push-1-of-6 {
+    margin-left: 16.66667%;
+}
+
+.grid__col--pull-1-of-6 {
+    margin-left: -16.66667%;
+}
+
+.grid__col--5-of-6 {
+    width: 83.33333%;
+}
+
+.grid__col--push-5-of-6 {
+    margin-left: 83.33333%;
+}
+
+.grid__col--pull-5-of-6 {
+    margin-left: -83.33333%;
+}
+
+.grid__col--1-of-8 {
+    width: 12.5%;
+}
+
+.grid__col--push-1-of-8 {
+    margin-left: 12.5%;
+}
+
+.grid__col--pull-1-of-8 {
+    margin-left: -12.5%;
+}
+
+.grid__col--3-of-8 {
+    width: 37.5%;
+}
+
+.grid__col--push-3-of-8 {
+    margin-left: 37.5%;
+}
+
+.grid__col--pull-3-of-8 {
+    margin-left: -37.5%;
+}
+
+.grid__col--5-of-8 {
+    width: 62.5%;
+}
+
+.grid__col--push-5-of-8 {
+    margin-left: 62.5%;
+}
+
+.grid__col--pull-5-of-8 {
+    margin-left: -62.5%;
+}
+
+.grid__col--7-of-8 {
+    width: 87.5%;
+}
+
+.grid__col--push-7-of-8 {
+    margin-left: 87.5%;
+}
+
+.grid__col--pull-7-of-8 {
+    margin-left: -87.5%;
+}
+
+.grid__col--1-of-12 {
+    width: 8.33333%;
+}
+
+.grid__col--push-1-of-12 {
+    margin-left: 8.33333%;
+}
+
+.grid__col--pull-1-of-12 {
+    margin-left: -8.33333%;
+}
+
+.grid__col--2-of-12 {
+    width: 16.66667%;
+}
+
+.grid__col--push-2-of-12 {
+    margin-left: 16.66667%;
+}
+
+.grid__col--pull-2-of-12 {
+    margin-left: -16.66667%;
+}
+
+.grid__col--5-of-12 {
+    width: 41.66667%;
+}
+
+.grid__col--push-5-of-12 {
+    margin-left: 41.66667%;
+}
+
+.grid__col--pull-5-of-12 {
+    margin-left: -41.66667%;
+}
+
+.grid__col--7-of-12 {
+    width: 58.33333%;
+}
+
+.grid__col--push-7-of-12 {
+    margin-left: 58.33333%;
+}
+
+.grid__col--pull-7-of-12 {
+    margin-left: -58.33333%;
+}
+
+.grid__col--10-of-12 {
+    width: 83.33333%;
+}
+
+.grid__col--push-10-of-12 {
+    margin-left: 83.33333%;
+}
+
+.grid__col--pull-10-of-12 {
+    margin-left: -83.33333%;
+}
+
+.grid__col--11-of-12 {
+    width: 91.66667%;
+}
+
+.grid__col--push-11-of-12 {
+    margin-left: 91.66667%;
+}
+
+.grid__col--pull-11-of-12 {
+    margin-left: -91.66667%;
+}
+
+.grid__col {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+@media (max-width: 700px) {
+    .grid__col {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 480px) {
+    .grid__col[class*="grid__col--m-"] {
+        display: inline-block;
+        margin-right: -.24em;
+    }
+
+    .grid__col.grid__col--m-1-of-2,
+    .grid__col.grid__col--m-2-of-4 {
+        width: 50%;
+    }
+
+    .grid__col.grid__col--m-1-of-3 {
+        width: 33.33333%;
+    }
+
+    .grid__col.grid__col--m-2-of-3 {
+        width: 66.66667%;
+    }
+
+    .grid__col.grid__col--m-1-of-4 {
+        width: 25%;
+    }
+
+    .grid__col.grid__col--m-3-of-4 {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid__col[class*="grid__col--s-"] {
+        display: inline-block;
+        margin-right: -.24em;
+    }
+
+    .grid__col.grid__col--s-1-of-2,
+    .grid__col.grid__col--s-2-of-4 {
+        width: 50%;
+    }
+
+    .grid__col.grid__col--s-1-of-3 {
+        width: 33.33333%;
+    }
+
+    .grid__col.grid__col--s-2-of-3 {
+        width: 66.66667%;
+    }
+
+    .grid__col.grid__col--s-1-of-4 {
+        width: 25%;
+    }
+
+    .grid__col.grid__col--s-3-of-4 {
+        width: 75%;
+    }
+}
+
+.grid__col--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid__col--d-first {
+    float: left;
+}
+
+.grid__col--d-last {
+    float: right;
+}
+
+.grid--no-gutter {
+    margin-left: 0;
+    width: 100%;
+}
+
+.grid--no-gutter .grid__col {
+    padding-left: 0;
+}
+
+.grid--no-gutter .grid__col--span-all {
+    margin-left: 0;
+    width: 100%;
+}
+
+.grid__col--ab {
+    vertical-align: bottom;
+}
+
+.grid__col--am {
+    vertical-align: middle;
+}
+
+/*=====  End of GRID  ======*/
+
+/*=============================================
+=            Sections            =
+=============================================*/
+.section1 {
+    background-color: #7dbcd4;
+}
+
+.section2 {
+    background-color: #98c19f;
+}
+
+.section4 {
+    background-color: #cc938e;
+}
+
+section>div {
+    padding-top: 35px;
+    padding-top: 35px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+section .content {
+    line-height: 24px;
+}
+
+/*=====  End of Sections  ======*/
+
+/*=============================================
+=            Inputs            =
+=============================================*/
+input,
+button {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #000;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+a.white.button {
+    border: 0.16em solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+a.button:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+
+a.button:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+a.white.button:hover {
+    color: #DDDDDD;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #DDDDDD;
+}
+
+a.white.button:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width:30em) {
+    a.button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+/*=====  End of Inputs  ======*/
+
+/*=============================================
+=            General            =
+=============================================*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 6.4rem;
+}
+
+h2 {
+    font-size: 5.2rem;
+}
+
+h3 {
+    font-size: 4.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+#main h1 {
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+#main .button {
+    margin-top: 25px;
+}
+
+.dots li a:before {
+    background: rgba(0, 0, 0, 0.48) !important;
+}
+
+.dots li a.active:before {
+    background: #000 !important;
+}
+
+.scroll-container section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.paralax {
+    /* background-attachment: fixed; */
+    color: #fff;
+    background-size: cover;
+}
+
+.bg1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('images/bg.jpg');
+}
+
+/*=====  End of General  ======*/
+
+/*=============================================
+=            Header            =
+=============================================*/
+nav {
+    background-color: #000;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*=====  End of Header  ======*/
